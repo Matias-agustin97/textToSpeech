@@ -1,7 +1,7 @@
 const btn= document.getElementById('start-btn')
 const text= document.getElementById('text')
 const descargar= document.getElementById('descarga-btn')
-
+const speaking= document.getElementById('speak')
 const greetings='Hola anto bomboncito, entregame el rosquete querida dale no te hagas la dificl'
 
 if(text.textContent=""){
@@ -36,7 +36,7 @@ const readingThisShit=(message)=>{
     if(message.includes('hola soy anto')){
         speech.text=greetings
     }
-    
+    speaking.textContent=speech.text
     speech.volume=1
     speech.rate=1
     speech.pitch=1
